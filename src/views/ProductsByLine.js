@@ -86,17 +86,17 @@ const ProductByLine = ({ match, location }) => {
     }
 
     const apiGetTypes = async () => {
-        const response = await Axios.get(`http://localhost:8090/api/product/types/list?line_id=${line}`);
+        const response = await Axios.get(`http://pmls.tk/api/product/types/list?line_id=${line}`);
         setTypes(response.data.data)
     }
 
     const apiGetBusiness = async () => {
-        const response = await Axios.get(`http://localhost:8090/api/product/business/list?line_id=${line}`);
+        const response = await Axios.get(`http://pmls.tk/api/product/business/list?line_id=${line}`);
         setBusiness(response.data.data)
     }
 
     const apiGetMaterial = async () => {
-        const response = await Axios.get(`http://localhost:8090/api/product/material/list?line_id=${line}`);
+        const response = await Axios.get(`http://pmls.tk/api/product/material/list?line_id=${line}`);
         setMaterial(response.data.data)
     }
 

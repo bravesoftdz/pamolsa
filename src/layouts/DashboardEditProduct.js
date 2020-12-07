@@ -62,7 +62,7 @@ const DashboardEditProduct = ({match}) => {
     })
 
     const getProduct = async () => {
-        const res = await axios.get(`http://localhost:8090/api/product/find?product_id=${id}`)
+        const res = await axios.get(`http://pmls.tk/api/product/find?product_id=${id}`)
         console.log(res.data)
         setProduct({
             name: res.data.data.name,

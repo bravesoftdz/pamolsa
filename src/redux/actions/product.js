@@ -28,7 +28,7 @@ import {
  } from './types'
 import axios from 'axios'
 
-const root = 'http://localhost:8090/api'
+const root = 'http://pmls.tk/api'
 
 let token = localStorage.getItem('token')
 

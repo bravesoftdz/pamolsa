@@ -38,7 +38,7 @@ const DashboardEditNew = ({match}) => {
 
     console.log(id)
     const getNewApi = async () => {
-        const response = await Axios.get(`http://localhost:8090/api/news/findById/${id}`)
+        const response = await Axios.get(`http://pmls.tk/api/news/findById/${id}`)
         console.log(response.data)
         setNewId({
             author: response.data.data.author,

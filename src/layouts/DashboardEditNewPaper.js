@@ -28,7 +28,7 @@ const DashboardEditNewPaper = ({match}) => {
     })
 
     const getNewPaperApi = async () => {
-        const response = await Axios.get(`http://localhost:8090/api/news/findByIdGallery/${id}`)
+        const response = await Axios.get(`http://pmls.tk/api/news/findByIdGallery/${id}`)
         console.log(response.data)
         setNewpaperId({
             name_newspaper: response.data.data.name_newspaper,

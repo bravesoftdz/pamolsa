@@ -1,7 +1,7 @@
 import { SEND_POSTULATION, SEND_POSTULATION_ERROR } from './types'
 import axios from 'axios'
 
-const root = 'http://localhost:8090/api'
+const root = 'http://pmls.tk/api'
 
 export const sendPostulation = (data) => async dispatch => {
     try {

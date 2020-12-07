@@ -94,17 +94,17 @@ const ProductsByType = ({ match }) => {
     }
 
     const apiGetLines = async () => {
-        const response = await Axios.get(`http://localhost:8090/api/product/line/list?type_id=${type_id}`);
+        const response = await Axios.get(`http://pmls.tk/api/product/line/list?type_id=${type_id}`);
         setLines(response.data.data)
     }
 
     const apiGetBusiness = async () => {
-        const response = await Axios.get(`http://localhost:8090/api/product/business/list?type_id=${type_id}`);
+        const response = await Axios.get(`http://pmls.tk/api/product/business/list?type_id=${type_id}`);
         setBusiness(response.data.data)
     }
 
     const apiGetMaterial = async () => {
-        const response = await Axios.get(`http://localhost:8090/api/product/material/list?type_id=${type_id}`);
+        const response = await Axios.get(`http://pmls.tk/api/product/material/list?type_id=${type_id}`);
         setMaterial(response.data.data)
     }
 

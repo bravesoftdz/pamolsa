@@ -23,7 +23,7 @@ const DashboardEditVacant = ({match}) => {
     const history = useHistory();
 
     const getVacant = async () => {
-        const res = await axios.get(`http://localhost:8090/api/vacant/find/${id}`)
+        const res = await axios.get(`http://pmls.tk/api/vacant/find/${id}`)
         console.log(res.data)
         setVacant({
             title: res.data.data.title,

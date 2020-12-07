@@ -30,7 +30,7 @@ const DashboardEditActivity = ({match}) => {
     const dispatch = useDispatch();
 
     const getCommunity = async () => {
-        const res = await axios.get(`http://localhost:8090/api/community/find/${id}`)
+        const res = await axios.get(`http://pmls.tk/api/community/find/${id}`)
         setCommunity({
             title: res.data.data.title,
             description: res.data.data.description,

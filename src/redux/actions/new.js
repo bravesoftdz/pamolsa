@@ -15,7 +15,7 @@ import {
 
 import axios from 'axios'
 
-const root = 'http://localhost:8090/api'
+const root = 'http://pmls.tk/api'
 
 export const sendNew = (data) => async dispatch => {
     try {
