@@ -1,7 +1,7 @@
 import { SEND_BANNER, SEND_BANNER_ERROR, GET_BANNER, GET_BANNER_ERROR, DELETE_BANNER, DELETE_BANNER_ERROR } from './types'
 import axios from 'axios'
 
-const root = 'http://3.120.185.254:8090/api'
+const root = 'http://localhost:8090/api'
 
 export const sendBanner = (data) => async dispatch => {
     try {

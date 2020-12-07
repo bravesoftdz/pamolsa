@@ -28,7 +28,7 @@ import {
  } from './types'
 import axios from 'axios'
 
-const root = 'http://3.120.185.254:8090/api'
+const root = 'http://localhost:8090/api'
 
 let token = localStorage.getItem('token')
 

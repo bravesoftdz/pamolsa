@@ -94,7 +94,7 @@ const NewsSearch = ({ news }) => {
 
     const { month, year, order } = selectDate
     console.log(month)
-    const res = await Axios.get(`http://3.120.185.254:8090/api/news/listByDate?page=1&year=${year}&month=${month}&order=${order}`);
+    const res = await Axios.get(`http://localhost:8090/api/news/listByDate?page=1&year=${year}&month=${month}&order=${order}`);
     setNewDate(res.data.data)
   }
 

@@ -1,7 +1,7 @@
 import { ADD_CART, DELETE_CART, SEND_CART, SEND_CART_ERROR } from './types'
 import axios from 'axios'
 import store from '../store'
-const root = 'http://3.120.185.254:8090/api'
+const root = 'http://localhost:8090/api'
 
 export const addToCart = (product) => {
     return async dispatch => {

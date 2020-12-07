@@ -32,17 +32,17 @@ const Quote = () => {
     let number = Object.keys(cartItems).length
 
     const apiDepartments = async () => {
-        const response = await axios.get('http://3.120.185.254:8090/api/department/list');
+        const response = await axios.get('http://localhost:8090/api/department/list');
         setDepartments(response.data.data)
     }
 
     const apiProvinces = async () => {
-        const response = await axios.get('http://3.120.185.254:8090/api/province/list');
+        const response = await axios.get('http://localhost:8090/api/province/list');
         setProvinces(response.data.data)
     }
 
     const apiDistricts = async () => {
-        const response = await axios.get('http://3.120.185.254:8090/api/district/list');
+        const response = await axios.get('http://localhost:8090/api/district/list');
         setDistricts(response.data.data)
     }
 
